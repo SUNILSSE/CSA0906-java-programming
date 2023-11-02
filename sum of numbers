@@ -1,11 +1,15 @@
 import java.io.*;
 import java.util.*;
-class sum
+class suminput
 {
 public static void main(String args[])
 {
-int x=10,y=20;
+int x,y;
+Scanner s=new Scanner(System.in);
+System.out.println("enter x and y values=");
+x=s.nextInt();
+y=s.nextInt();
 int z=x+y;
-System.out.println("sum of2 numbers="+z);
+System.out.println("sum of 2 numbers ="+z);
 }
 }
