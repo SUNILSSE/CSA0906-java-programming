@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+class Student
+{
+    public static void main(String args[])
+    {
+        int regno,m1,m2,m3,m4,m5;
+        Scanner s=new Scanner(System.in);
+          System.out.println("enter name");
+          String name=s.nextLine();
+          System.out.println("enter regno value");
+         regno=s.nextInt();
+        System.out.println("enter m1");
+        m1=s.nextInt();
+        System.out.println("enter m2");
+         m2=s.nextInt();
+        System.out.println("enter m3");
+        m3=s.nextInt();
+        System.out.println("enter m4");
+        m4=s.nextInt();
+        System.out.println("enter m5");
+        m5=s.nextInt();
+            int t=m1+m2+m3+m4+m5;
+            float a=t/5;
+            System.out.println("total is:"+t);
+            System.out.println("average is:"+a);
+    }
+}
+        

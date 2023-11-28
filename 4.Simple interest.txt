@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+class interest
+{
+public static void main(String args[])
+{
+int p,t;
+float r;
+System.out.println("enter p,t and r values:");
+Scanner s=new Scanner(System.in);
+p=s.nextInt();
+t=s.nextInt();
+r=s.nextFloat();
+float si=(p*t*r)/100;
+System.out.println(si);
+}
+}
