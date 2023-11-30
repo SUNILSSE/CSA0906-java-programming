@@ -1,0 +1,56 @@
+import java.io.*;
+import java.util.*;
+class student
+{
+student()
+{
+int regno;
+String name;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the name:");
+n=s.nextLine();
+System.out.println("enter the regno:");
+regno=s.nextInt();
+}
+student()
+{
+int m1,m2,m3,m4,m5;
+System.out.println("enter the 5 subject marks:");
+Scanner s=new Scanner(System.in);
+m1=s.nextInt();
+m2=s.nextInt();
+m3=s.nextInt();
+m4=s.nextInt();
+m5=s.nextInt();
+}
+calculate()
+{
+int avg;
+avg=(m1+m2+m3+m4+m5)/5;
+}
+display()
+{
+if(avg>90){
+System.out.println("grade=A+");
+}else if(80<=avg && avg>=90){
+System.out.println("grade=A");
+}else if(70<=avg && avg>=80){
+System.out.println("grade=B");
+}else if(60<=avg && avg>=70){
+System.out.println("grade=c");
+}else if(avg<60){
+System.out.println("grade=E");
+}else{
+System.out.println("invalid input");
+}
+}
+class report
+{
+public static void main(String args[])
+{
+student a=new student();
+a.calculate();
+a.display();
+}
+}
+}
